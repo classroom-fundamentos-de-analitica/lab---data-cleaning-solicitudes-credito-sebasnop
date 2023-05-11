@@ -97,7 +97,7 @@ def clean_fecha(dataframe):
     df.fecha_de_beneficio = pd.to_datetime(
         df.fecha_de_beneficio,
         infer_datetime_format=True,
-        dayfirst=True,
+        # dayfirst=True,
         errors="raise",
     )
 
@@ -150,7 +150,7 @@ def clean_data():
     df = clean_idea(df)
     df = clean_barrio(df)
     df = clean_comuna(df)
-    # df = clean_fecha(df)
+    df = clean_fecha(df)
     df = clean_monto(df)
     df = clean_linea(df)
 
