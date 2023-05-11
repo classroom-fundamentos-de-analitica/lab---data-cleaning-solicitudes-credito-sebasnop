@@ -150,7 +150,7 @@ def clean_data():
     df = clean_idea(df)
     df = clean_barrio(df)
     df = clean_comuna(df)
-    df = clean_fecha(df)
+    # df = clean_fecha(df)
     df = clean_monto(df)
     df = clean_linea(df)
 
