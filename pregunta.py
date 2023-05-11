@@ -97,6 +97,7 @@ def clean_fecha(dataframe):
     df.fecha_de_beneficio = pd.to_datetime(
         df.fecha_de_beneficio,
         infer_datetime_format=True,
+        format="mixed",
         dayfirst=True,
         errors="raise",
     )
